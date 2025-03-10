@@ -3,6 +3,7 @@
   <a href="index.php?page=about" class=<?php echo isset($_GET["page"]) && $_GET["page"] === "about" ? "active" : "" ?>>About</a>
   <a href="index.php?page=contact" class=<?php echo isset($_GET["page"]) && $_GET["page"] === "contact" ? "active" : "" ?>>Contact</a>
   <a href="index.php?page=faq" class=<?php echo isset($_GET["page"]) && $_GET["page"] === "faq" ? "active" : "" ?>>FAQ</a>
+  <a href="index.php?page=products" class=<?php echo isset($_GET["page"]) && $_GET["page"] === "products" ? "active" : "" ?>>Products</a>
 
   <?php if (isset($_SESSION["username"])): ?>
     <a href="index.php?page=protected" class=<?php echo isset($_GET["page"]) && $_GET["page"] === "protected" ? "active" : "" ?>>Protected</a>

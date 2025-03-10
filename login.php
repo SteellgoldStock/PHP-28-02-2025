@@ -1,5 +1,7 @@
 <?php
 
+require_once "./lib/basket.php";
+
 session_start();
 
 if (isset($_POST["login"])) {
@@ -8,6 +10,7 @@ if (isset($_POST["login"])) {
 
   if ($username === "Gaetan" && $password === "gaetan") {
     $_SESSION["username"] = $username;
+    $_SESSION["basket"] = new Basket();
     header("Location: index.php");
   } else {
     $error = true;
