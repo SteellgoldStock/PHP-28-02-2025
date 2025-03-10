@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +17,8 @@
     $PAGES = [
       "about" => "sections/about.php",
       "contact" => "sections/contact.php",
-      "faq" => "sections/faq.php"
+      "faq" => "sections/faq.php",
+      "protected" => "sections/protected.php"
     ];
 
     if (isset($_GET["page"]) && array_key_exists($_GET["page"], $PAGES)) {
